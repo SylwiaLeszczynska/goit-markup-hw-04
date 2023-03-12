@@ -15,8 +15,7 @@
   width: 1200px;
   padding: 0 15px;
 }
-.icon {
-}
+
 .section {
   padding: 94px 0px;
 }
@@ -123,6 +122,9 @@ ul {
   width: 121px;
   height: 38px;
   border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px #0000001f;
+  box-shadow: 0px 1px 2px 0px #00000014;
+  box-shadow: 0px 3px 1px 0px #0000001a;
 }
 .categories:hover {
   background-color: var(--color);
@@ -177,7 +179,13 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-size: 1600px 600px;
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-image: url("images/background.jpg");
 }
+
 .button-item {
   background: var(--color);
   font-weight: 700;
@@ -205,6 +213,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .title-list {
   font-weight: 700;
   font-size: 14px;
@@ -238,13 +247,14 @@ ul {
 
 .team-photo {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   height: 368px;
   left: 815px;
   top: 1635px;
+  box-shadow: 0px 2px 1px 0px #00000033;
+  box-shadow: 0px 1px 1px 0px #00000024;
+  box-shadow: 0px 1px 3px 0px #0000001f;
 }
 .team-section {
   background-color: #f5f4fa;
@@ -278,6 +288,17 @@ ul {
   color: var(--color2);
   text-align: center;
   padding-top: 8px;
+}
+.clients {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-bottom: 50px;
 }
 
 .footer {
@@ -323,4 +344,18 @@ ul {
 .contacts-mail {
   text-decoration-line: underline;
   padding-bottom: 8px;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+.social-link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #ffffff;
+  padding-bottom: 20px;
 }
