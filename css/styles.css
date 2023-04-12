@@ -19,6 +19,7 @@ body {
 ul {
     list-style: none;
 }
+
 .section {
     padding: 94px 0px;
 }
@@ -80,19 +81,23 @@ ul {
     gap: 50px;
 }
 .contacts-item {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
     color: var(--color2);
+    fill: currentColor;
 }
 .contacts-item:is(:hover, :focus) {
     color: var(--color);
-    fill: var(--color);
 }
 .contacts-icons {
     fill: var(--color2);
+    margin-right: 10px;
 }
+
 .contacts-icons:is(:hover, :focus) {
     fill: var(--color);
 }
@@ -213,6 +218,7 @@ ul {
 /* TEAM */
 
 .team {
+    display: flex;
     background-color: #f5f4fa;
 }
 
@@ -256,25 +262,33 @@ ul {
     top: 1635px;
     gap: 30px;
 }
-
-.team-social-list {
+.team-social-links {
+    display: flex;
+    margin: 16px 32px 30px;
+    gap: 10px;
 }
+
 .team-social-items {
     display: flex;
-    justify-content: center;
-    padding: 16px 32px 18px;
-    gap: 22px;
+    padding: 12px;
+    border-radius: 50%;
 }
 
 .team-social-icons {
     fill: #afb1b8;
     width: 20px;
     height: 20px;
+    gap: 10px;
 }
 .team-social-icons:is(:hover, :focus) {
     fill: var(--color4);
-    background: var(--color);
+    background-color: var(--color);
 }
+.team-social-items:is(:hover, :focus) {
+    fill: var(--color4);
+    background-color: var(--color);
+}
+
 /* TEAM */
 
 /* CUSTOMERS */
@@ -336,6 +350,9 @@ ul {
 .categories-button:is(:hover, :focus) {
     background-color: var(--color);
     color: var(--color4);
+    box-shadow: 0px 2px 2px 0px #0000001f;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001a;
 }
 
 /* CATEGORIES */
@@ -371,7 +388,11 @@ ul {
     left: 215px;
     top: 1130px;
 }
-
+.procjects-photo:is(:hover, :focus) {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000f;
+    box-shadow: 0px 1px 1px 0px #0000001f;
+}
 /* PROJECTS */
 
 /* PORTFOLIO */
@@ -385,6 +406,11 @@ ul {
     align-items: center;
     justify-content: space-between;
 }
+
+.footer-wrapper {
+    display: flex;
+}
+
 .logo {
     display: flex;
 }
@@ -411,6 +437,11 @@ ul {
 .contacts-footer:is(:hover, :focus) {
     color: var(--color);
 }
+
+.footer-social-links {
+    margin-left: 70px;
+}
+
 .footer-social-links-title {
     font-weight: 700;
     font-size: 14px;
@@ -419,6 +450,7 @@ ul {
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 20px;
+    margin-top: 12px;
 }
 
 .footer-social-links-list {
