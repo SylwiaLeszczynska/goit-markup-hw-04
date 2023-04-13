@@ -89,18 +89,18 @@ ul {
     line-height: 1.1;
     color: var(--color2);
 }
+
 .contacts-item:is(:hover, :focus) {
     color: var(--color);
-    fill: currentColor;
+}
+.contacts-item:is(:hover, :focus) > .contacts-icons {
+    fill: var(--color);
 }
 .contacts-icons {
     fill: var(--color2);
     margin-right: 10px;
 }
 
-.contacts-icons:is(:hover, :focus) {
-    fill: var(--color);
-}
 /* HEADER */
 
 /* INDEX */
@@ -280,13 +280,13 @@ ul {
     height: 20px;
     gap: 10px;
 }
-.team-social-icons:is(:hover, :focus) {
-    fill: var(--color4);
+
+.team-social-items:is(:hover, :focus) {
     background-color: var(--color);
 }
-.team-social-items:is(:hover, :focus) {
-    fill: var(--color4);
-    background-color: var(--color);
+
+.team-social-items:is(:hover, :focus) > .team-social-icons {
+    fill: white;
 }
 
 /* TEAM */
