@@ -90,15 +90,16 @@ ul {
     color: var(--color2);
 }
 
+.contacts-icons {
+    fill: var(--color2);
+    margin-right: 10px;
+}
+
 .contacts-item:is(:hover, :focus) {
     color: var(--color);
 }
 .contacts-item:is(:hover, :focus) > .contacts-icons {
     fill: var(--color);
-}
-.contacts-icons {
-    fill: var(--color2);
-    margin-right: 10px;
 }
 
 /* HEADER */
@@ -305,29 +306,24 @@ ul {
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 
 .customers-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
 
-.customers-item {
+.customers-icons {
+    display: block;
+    fill: #afb1b8;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     gap: 30px;
 }
-.customers-icons {
-    fill: #afb1b8;
-}
 
-.customers-item:is(:hover, :focus) {
-    border-color: #2196f3;
-}
-.customers-item:is(:hover, :focus) > .customers-icons {
+.customers-icons:is(:hover, :focus) {
     fill: var(--color);
+    border-color: var(--color);
 }
 
 /* CUSTOMERS */
@@ -483,10 +479,9 @@ ul {
 
 .footer-social-links-items:is(:hover, :focus) {
     background: var(--color);
+    border-radius: 50%;
 }
-
 .footer-social-links-items:is(:hover, :focus) > .footer-social-links-icons {
-    fill: white;
+    fill: var(--color4);
 }
-
 /* FOOTER */
